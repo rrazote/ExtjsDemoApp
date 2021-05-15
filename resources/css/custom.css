@@ -1,0 +1,35 @@
+.west-container {
+    background-color: #5fa2dd; 
+}
+
+.x-btn-inner {
+    font-weight: bold !important; 
+}
+
+.x-btn { 
+    border-radius: 10px !important;
+    border-color: #5fa2dd !important;
+}
+
+.x-btn:hover {  
+    background-color: #0673d1 !important;
+}
+
+.west-title {
+    height: 50px;
+    background-color: #0673d1;
+    color: white;
+    font-weight: bold;
+    font-size: 14px; 
+    text-align: center;
+    padding: 15px; 
+}
+
+.user-info-grid {
+    background-color: white
+}
+
+.x-column-header {
+    background-color: #0673d1 !important;
+    color: white !important;
+}
