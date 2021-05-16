@@ -5,7 +5,8 @@ Ext.define('DemoApp.view.grid.UserInfo',{
     itemId: 'GridUserInfo',
     requires: [
         'DemoApp.view.grid.UserInfoController',
-        'DemoApp.view.grid.UserInfoModel'
+        'DemoApp.view.grid.UserInfoModel',
+        'Ext.grid.column.Action'
     ],
 
     controller: 'grid-userinfo',
@@ -23,7 +24,22 @@ Ext.define('DemoApp.view.grid.UserInfo',{
 
     cls: 'user-info-grid',
 
-    columns: [{
+    columns: [
+    {
+        xtype: 'actioncolumn',
+        text: 'Actions', 
+        align: 'center',   
+        sortable: false,
+        enableColumnHide: false,
+        menuDisabled: true,
+        items: [
+            {
+                itemId: 'ActionColumnDelete',
+                handler: 'onActionColumnDeleteClick',
+                iconCls: 'x-fa fa-trash'
+            }
+        ]
+    },{
         text: 'First Name',
         dataIndex: 'first_name',
         flex: 1
